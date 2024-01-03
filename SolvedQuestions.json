@@ -48,6 +48,7 @@
             "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
             "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
             "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+            "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
             "https://leetcode.com/problems/k-closest-points-to-origin/",
             "https://leetcode.com/problems/surrounded-regions/",
             "https://leetcode.com/problems/redundant-connection/",
@@ -55,8 +56,10 @@
             "https://leetcode.com/problems/house-robber/",
             "https://leetcode.com/problems/decode-ways/",
             "https://leetcode.com/problems/coin-change/",
+            "https://leetcode.com/problems/maximum-product-subarray/",
             "https://leetcode.com/problems/longest-increasing-subsequence/",
             "https://leetcode.com/problems/coin-change-ii/",
+            "https://leetcode.com/problems/gas-station/",
             "https://leetcode.com/problems/reverse-bits/",
             "https://leetcode.com/problems/reverse-integer/"
         ]
