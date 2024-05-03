@@ -77,6 +77,13 @@
         "https://leetcode.com/problems/single-number/",
         "https://leetcode.com/problems/reverse-bits/",
         "https://leetcode.com/problems/missing-number/",
-        "https://leetcode.com/problems/reverse-integer/"
+        "https://leetcode.com/problems/reverse-integer/",
+        "https://leetcode.com/problems/word-ladder/",
+        "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+        "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+        "https://leetcode.com/problems/longest-palindromic-substring/",
+        "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "https://leetcode.com/problems/distinct-subsequences/",
+        "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
     ]
 }
