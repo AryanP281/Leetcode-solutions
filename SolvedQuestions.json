@@ -84,6 +84,18 @@
         "https://leetcode.com/problems/longest-palindromic-substring/",
         "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
         "https://leetcode.com/problems/distinct-subsequences/",
-        "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+        "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "https://leetcode.com/problems/palindrome-partitioning/",
+        "https://neetcode.io/problems/same-binary-tree",
+        "https://neetcode.io/problems/foreign-dictionary",
+        "https://neetcode.io/problems/meeting-schedule",
+        "https://neetcode.io/problems/subsets-ii",
+        "https://neetcode.io/problems/interleaving-string",
+        "https://neetcode.io/problems/network-delay-time",
+        "https://neetcode.io/problems/implement-prefix-tree",
+        "https://neetcode.io/problems/set-zeroes-in-matrix",
+        "https://neetcode.io/problems/task-scheduling",
+        "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "https://leetcode.com/problems/merge-intervals/"
     ]
 }
