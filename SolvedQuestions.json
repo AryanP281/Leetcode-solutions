@@ -96,6 +96,15 @@
         "https://neetcode.io/problems/set-zeroes-in-matrix",
         "https://neetcode.io/problems/task-scheduling",
         "https://leetcode.com/problems/binary-tree-level-order-traversal/",
-        "https://leetcode.com/problems/merge-intervals/"
+        "https://leetcode.com/problems/merge-intervals/",
+        "https://leetcode.com/problems/reconstruct-itinerary/",
+        "https://leetcode.com/problems/insert-interval/",
+        "https://leetcode.com/problems/clone-graph/",
+        "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "https://leetcode.com/problems/detect-squares/",
+        "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+        "https://leetcode.com/problems/happy-number/",
+        "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "https://leetcode.com/problems/word-break/"
     ]
 }
