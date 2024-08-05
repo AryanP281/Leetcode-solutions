@@ -1,6 +1,7 @@
 qs = [...document.getElementsByTagName("tr")]
 
-unsolved = qs.filter((q) => q.className !== "completed")
+//unsolved = qs.filter((q) => q.className !== "completed")
+unsolved = qs.filter((q) => q.className.includes("completed") == false)
 
 qToSolve = unsolved[Math.floor(Math.random() * ((unsolved.length + 1)))]
 questionLink = qToSolve.getElementsByTagName("a")[0].href

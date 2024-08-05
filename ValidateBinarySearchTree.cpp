@@ -3,8 +3,7 @@
 
 using namespace std;
 
-struct TreeNode 
-{
+struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
@@ -13,59 +12,25 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-bool isValidBST(TreeNode* root);
-int* checkValidity(TreeNode* currNode);
-
-TreeNode* generateTree(vector<int>& array)
+struct Resp
 {
-    TreeNode* root = new TreeNode(array[0]);
+    bool isV;
+    int minVal;
+    int maxVal;
 
-    queue<TreeNode*>* currLevel = new queue<TreeNode*>();
-    currLevel->push(root);
-    queue<TreeNode*>* nextLevel = new queue<TreeNode*>();
-
-    int i = 1;
-    while(!currLevel->empty())
+    Resp(bool isV, int minV, int maxV)
     {
-        while(!currLevel->empty())
-        {
-            TreeNode* curr = currLevel->front();
-            currLevel->pop();
-
-            if(i >= array.size())
-                continue;
-            else
-            {
-                if(array[i] > -1001)
-                {
-                    curr->left = new TreeNode(array[i]);
-                    nextLevel->push(curr->left);
-                }
-                i++;
-                if(i <= array.size() && array[i] > -1001)
-                {
-                    curr->right = new TreeNode(array[i]);
-                    nextLevel->push(curr->right);
-                }
-                i++;
-            }
-        }
-
-        delete currLevel;
-        currLevel = nextLevel;
-        nextLevel = new queue<TreeNode*>(); 
+        this->isV = isV;
+        this->minVal = minV;
+        this->maxVal = maxV;
     }
-    delete currLevel;
-    delete nextLevel;
 
-    return root;
-}
+    Resp() {}
+};
 
 int main()
 {
-    vector<int> arr = {5,1,4,-1001,-1001,3,6};
-    TreeNode* root = generateTree(arr);
-    cout << isValidBST(root);
+
 
     getchar();
     return 0;
@@ -73,36 +38,28 @@ int main()
 
 bool isValidBST(TreeNode* root) 
 {
-    int* res = checkValidity(root);
-    bool isValid = res[0];
-    delete[] res;
-    return isValid;
+    return check(root).isV;
 }
 
-int* checkValidity(TreeNode* currNode)
+Resp check(TreeNode* currNode)
 {
     
-    int* res = new int[3];
-    res[0] = 1;
-    res[1] = currNode->val;
-    res[2] = currNode->val;
-
+    Resp resp(true, currNode->val, currNode->val);
+    Resp childResp;
     if(currNode->left)
     {
-        int* leftRes = checkValidity(currNode->left);
-        res[0] &= 1*(leftRes[0] && leftRes[2] < currNode->val);
-        res[1] = min(res[1], leftRes[1]);
-        res[2] = max(res[2], leftRes[2]);
-        delete[] leftRes;
+        childResp = check(currNode->left);
+        resp.isV &= (childResp.isV && childResp.maxVal < currNode->val);
+        resp.minVal = min(childResp.minVal, resp.minVal);
+        resp.maxVal = max(childResp.maxVal, resp.maxVal);
     }
-    if(res[0] && currNode->right)
+    if(resp.isV && currNode->right)
     {
-        int* rightRes = checkValidity(currNode->right);
-        res[0] &= 1*(rightRes[0] && rightRes[1] > currNode->val);
-        res[1] = min(res[1], rightRes[1]);
-        res[2] = max(res[2], rightRes[2]);
-        delete[] rightRes;
+        childResp = check(currNode->right);
+        resp.isV &= (childResp.isV && childResp.minVal > currNode->val);
+        resp.minVal = min(childResp.minVal, resp.minVal);
+        resp.maxVal = max(childResp.maxVal, resp.maxVal);
     }
 
-    return res;
+    return resp;
 }
