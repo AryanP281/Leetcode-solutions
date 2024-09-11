@@ -129,6 +129,15 @@
         "https://neetcode.io/problems/valid-tree",
         "https://leetcode.com/problems/n-queens/",
         "https://leetcode.com/problems/maximum-subarray/",
-        "https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/"
+        "https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/",
+        "https://leetcode.com/problems/edit-distance/description/",
+        "https://leetcode.com/problems/balanced-binary-tree/",
+        "https://leetcode.com/problems/jump-game-ii/",
+        "https://leetcode.com/problems/counting-bits/",
+        "https://leetcode.com/problems/subtree-of-another-tree/",
+        "https://leetcode.com/problems/rotate-image/",
+        "https://leetcode.com/problems/sum-of-two-integers/",
+        "https://leetcode.com/problems/regular-expression-matching/",
+        "https://leetcode.com/problems/multiply-strings/"
     ]
 }
