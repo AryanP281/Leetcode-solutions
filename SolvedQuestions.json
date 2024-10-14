@@ -146,6 +146,10 @@
         "https://leetcode.com/problems/unique-paths/",
         "https://leetcode.com/problems/course-schedule-ii/",
         "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
-        "https://leetcode.com/problems/longest-common-subsequence/"
+        "https://leetcode.com/problems/longest-common-subsequence/",
+        "https://leetcode.com/problems/min-cost-climbing-stairs/",
+        "https://leetcode.com/problems/spiral-matrix/",
+        "https://leetcode.com/problems/meeting-rooms-ii/",
+        "https://leetcode.com/problems/jump-game/"
     ]
 }
